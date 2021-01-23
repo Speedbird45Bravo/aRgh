@@ -1,0 +1,12 @@
+---
+title: "spi_ggp"
+output: html_notebook
+---
+```{r}
+library(ggplot2)
+url <- 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches_latest.csv'
+df <- read.csv(url, header=TRUE)
+df <- na.omit(df)
+ggplot(data=df, mapping=aes(score1, spi1), type="p") + geom_point()
+```
+
