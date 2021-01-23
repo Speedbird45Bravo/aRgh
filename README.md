@@ -1,2 +1,2 @@
 # aRgh
-R ventures. Still mostly venturing.
+Basic R ventures.
