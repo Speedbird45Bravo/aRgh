@@ -10,9 +10,6 @@ df <- df[validation_index, ]
 
 df$Species <- as.factor(df$Species)
 
-control <- trainControl(method="cv", number=10)
-metric <- "Accuracy"
-
 lda <- train(Species ~ ., data=df, method="lda", metric="Accuracy", trControl=trainControl(method="cv", number=10))
 predictions <- predict(lda, validation)
 confusionMatrix(predictions, validation$Species)
