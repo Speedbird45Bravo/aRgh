@@ -1,6 +1,5 @@
 library(caret)
 library(dplyr)
-library(randomForest)
 
 url <- 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches_latest.csv'
 df <- read.csv(url)
