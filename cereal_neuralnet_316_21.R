@@ -1,5 +1,4 @@
 library(neuralnet)
-library(dplyr)
 library(caret)
 
 # The data comes from a dataset on cereals, featuring a number of numerical variables. 
